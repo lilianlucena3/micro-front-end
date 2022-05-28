@@ -26,13 +26,13 @@ export function ListarProfessor(){
                 </tr>
             </thead>
             <tbody>
-                {clientes.map(cliente => {
+                {professores.map(professor => {
                     return(
-                        <tr key={cliente.id}>
-                            <td>{cliente.id}</td>
-                            <td>{cliente.nome}</td>
-                            <td>{cliente.cpf}</td>
-                            <td>{cliente.materia}</td>
+                        <tr key={professor.id}>
+                            <td>{professor.id}</td>
+                            <td>{professor.nome}</td>
+                            <td>{professor.cpf}</td>
+                            <td>{professor.materia}</td>
                         </tr>
                     );
                 })}
